@@ -1,10 +1,10 @@
 import React from 'react'
-import {HashRouter, Routes, Route}  from 'react-router-dom'
+import {BrowserRouter, Routes, Route}  from 'react-router-dom'
 import {Box} from '@mui/material'
 
 import {Navbar, Feed, VideoDetail, ChannelDetail, SearchFeed} from './components'
 const App = () => ( 
-    <HashRouter>
+    <BrowserRouter>
     <Box sx={{backgroundColor: '#000'}}>
     <Navbar/>
     <Routes>
@@ -14,7 +14,7 @@ const App = () => (
         <Route path='/search/:searchTerm' element={<SearchFeed/>}/>
     </Routes>
     </Box>
-    </HashRouter>
+    </BrowserRouter>
 )
 
 export default App
